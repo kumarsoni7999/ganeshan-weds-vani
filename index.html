@@ -7,225 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ganeshan weds Vani</title>
 </head>
-<style>
-    @font-face {
-        font-family: 'CustomFont';
-        src: url('https://example.com/font.ttf');
-    }
-
-    .m-0 {
-        margin: 0;
-    }
-
-    .p-0 {
-        padding: 0;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        overflow: hidden;
-        font-family: 'system-ui';
-    }
-
-    .container {
-        height: 100vh;
-        width: 100vw;
-        background-image: url('bg.jpg');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        filter: contrast(0.8);
-    }
-
-    .overlay {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        background-color: #00000038;
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
-    .text-white {
-        color: white;
-    }
-
-    .text-black {
-        color: black;
-    }
-
-    .font-cursive {
-        font-family: "Great Vibes", cursive;
-        font-size: 30px;
-        z-index: 10;
-    }
-
-    .leaf-bg {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -70px;
-        animation: centerLeafFloat 5s infinite alternate ease-in-out;
-    }
-
-    .leaf {
-        animation: rotate 60s linear infinite;
-    }
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .venue {
-        position: absolute;
-        bottom: 30px;
-    }
-
-    .flower-sticky-1 {
-        position: absolute;
-        top: -50px;
-        right: -20px;
-        transform: rotate(-90deg);
-        filter: contrast(0.8);
-    }
-
-    .flower-sticky-2 {
-        position: absolute;
-        bottom: -80px;
-        left: -20px;
-        transform: rotate(90deg);
-        filter: contrast(0.8);
-    }
-
-    .btn {
-        border: 2px solid white;
-        padding: 10px;
-        margin-bottom: 5px;
-        padding-inline: 20px;
-        border-radius: 50px;
-        margin-bottom: 20px;
-        background-color: white;
-        cursor: pointer;
-    }
-
-
-    .sparkle {
-        width: 30px;
-        height: 30px;
-        background-color: #fdd835;
-        border-radius: 50%;
-        position: absolute;
-        opacity: 0;
-    }
-
-    .sparkle-1{
-        animation: sparkleAnimation1 2s infinite ease-in-out;
-        top: 50%;
-        left: 25%;
-    }
-    .sparkle-2{
-        animation: sparkleAnimation2 4s infinite ease-in-out;
-        top: 60%;
-        left: 40%;
-    }
-    .sparkle-3{
-        animation: sparkleAnimation3 3s infinite ease-in-out;
-        top: 45%;
-        left: 70%;
-    }
-    .sparkle-4{
-        animation: sparkleAnimation3 3s infinite ease-in-out;
-        top: 40%;
-        left: 50%;
-    }
-
-    @keyframes sparkleAnimation1 {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(0);
-            opacity: 1;
-        }
-    }
-    @keyframes sparkleAnimation2 {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(0);
-            opacity: 1;
-        }
-    }
-    @keyframes sparkleAnimation3 {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(0);
-            opacity: 1;
-        }
-    }
-    @keyframes sparkleAnimation4 {
-        0% {
-            transform: scale(0);
-            opacity: 1;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(0);
-            opacity: 1;
-        }
-    }
-</style>
 
 <body>
+    <!-- <div style="position: absolute; z-index: 11; top: 10px; left: 10px; cursor: pointer;">
+        <i class="fa fa-close text-white" style="font-size: 30px; padding: 10px; display: none;" id="player"></i>
+    </div> -->
+
     <div class="container">
-        <div class="overlay"></div>
+        <!-- <iframe width="100%" height="100%" id="video-player" style="z-index: 10; display: none;"
+            src="https://youtube.com/shorts/P50AzaZQmvg?si=YfFh6K1VttnjeCHO?autoplay=1" frameborder="0" allow="autoplay"
+            allowfullscreen></iframe> -->
 
         <div class="sparkle sparkle-1"></div>
         <div class="sparkle sparkle-2"></div>
@@ -245,7 +40,7 @@
         </div>
 
         <div>
-            <div class="text-center text-white font-cursive">
+            <div class="text-center text-white font-cursive" style="margin-top: -150px;">
                 <h1 style="line-height: 0;">Ganeshan</h1>
                 <p style="line-height: 1;">weds</p>
                 <h1 style="line-height: 1;">Vani</h1>
@@ -264,6 +59,13 @@
                     <div class="btn" id="click-venue">
                         <p class="p-0 m-0 text-black view-venue">View Venue</p>
                     </div>
+                    <div class="btn" id="click-video" style="margin-left: 10px;">
+                        <p class="p-0 m-0 text-black view-venue">
+                            <a href="https://www.youtube.com/shorts/P50AzaZQmvg" target="_blank">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </p>
+                    </div>
                 </div>
 
                 <p style="font-weight: bold;" class="p-0 m-0">You are invited.</p>
@@ -280,6 +82,23 @@
         btn.addEventListener('click', function () {
             let url = 'https://www.google.com/maps/place/Sthanave+Technologies/@21.2112827,81.2983185,16.4z/data=!4m6!3m5!1s0x3a293d0d5dd1020f:0xbc71a7f63f8bc126!8m2!3d21.2129832!4d81.2945556!16s%2Fg%2F11rrs46fbc?entry=ttu'
             window.open(url, '_blank')
+        })
+
+        var clickVideo = document.getElementById('click-video')
+        var videoPlayer = document.getElementById('video-player')
+        var player = document.getElementById('player')
+        // var overlayVideo = document.getElementById('overlayVideo')
+
+        clickVideo.addEventListener('click', () => {
+            // overlayVideo.style.zIndex = 10
+            player.style.display = 'block'
+            videoPlayer.style.display = 'block'
+        })
+
+        player.addEventListener('click', () => {
+            // overlayVideo.style.zIndex = 0
+            player.style.display = 'none'
+            videoPlayer.style.display = 'none'
         })
     })
 </script>
